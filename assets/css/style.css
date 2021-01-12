@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:100,200,300,400,500,600,700!Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-
-/* -------------------------Colours  */
+/* -----------------------------------------------------------------------Colours  */
 
 /* o ponto antes eh para indicar a classe do html */
 
 .bg-color-name-title {
-    background-color: rgb(88, 81, 76);
+    background-color: rgb(110, 104, 99);
 }
 
 .ui-menu-color-home {
@@ -29,10 +28,14 @@
     background-color:#fff;
 }
 
+.bg-color-personal-info {
+    background-color: #e0dada;
+}
 
 
 
-/* -------------------------Special paddings/margins/text  */
+
+/* -----------------------------------------------------------Special paddings/margins/text  */
 
 h1,
 h2,
@@ -71,7 +74,10 @@ h4 {
     margin-top: 25px;
     margin-bottom:40px;
 }
-/* -------------------------Heading  */
+
+
+/* ------------------------------------------------------------------------------Heading  */
+
 
 header {
     margin: 0;
@@ -94,36 +100,36 @@ header {
 
 .name {
     font-family: "Exo", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 46px;
     margin-top: 50px;
     color: #fafafa;
 }
 
-/* coloca-se essa segunda fonte para se no caso a primeira nao carregar  */
+/* ------------------------------------------------coloca-se essa segunda fonte para se no caso a primeira nao carregar  */
 
 .title {
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
     color: #fafafa;
 }
 /*  */
-/* essa classe peguei no inspecionar do site e copiei para alterar a margem para zero no menu */
+/*--------------------------------------- essa classe peguei no inspecionar do site e copiei para alterar a margem para zero no menu */
 
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
 
-/* essa font size eh pra nao ter gap entre os itens do menu  */
+/* ---------------------------------------essa font size eh pra nao ter gap entre os itens do menu  */
 
 .menucontainer {
     font-size: 0;
 }
 
-/* o nav margin 0 eh para o tamanho da foto e do menu ficarem da mesma altura. esse nav eh tbm para o controle dos items do menu, padding para ter controle total */
+/* ---------------------------------o nav margin 0 eh para o tamanho da foto e do menu ficarem da mesma altura. esse nav eh tbm para o controle dos items do menu, padding para ter controle total */
 
 #nav {
     margin: 0;
@@ -151,7 +157,7 @@ header {
     padding-top: 22px;
     display: block;
     color: #fafafa;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .menuitem span {
@@ -165,14 +171,14 @@ header {
     letter-spacing: 2px;
 }
 
-/* ---------------------------Hoover.css */
+/* -----------------------------------------------------------------------Hoover.css */
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/* -------------------------Footer  */
+/* -------------------------------------------------------------------------Footer  */
 
 footer {
     background-color: rgb(88, 81, 76);
@@ -223,4 +229,72 @@ footer {
 
 #footer-details {
     padding: 20px;
+}
+
+
+/* -------------------------------------------------------Thre Reasons */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: rgb(223, 95, 10);
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+/* --------------------------------------Personal Info */
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+}
+
+/* --------------------------------------Skills */
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgb(25, 25, 25, 0.2);
+}
+
+.progress-section {
+    margin: 40px 20px;
 }

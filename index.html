@@ -12,7 +12,9 @@
 </head>
 <body>
     <header>
+
         <!-- no-gutters eh para tirar os gaps entre itens-->
+
         <div class="row no-gutters">
             <a class="col-md-4 logo" href="index.html"></a>
             <div class="col-md-8">
@@ -22,12 +24,16 @@
                         <h2 class="title"> Full Stack Developer</h2>
                     </div>
                 </div>
+
         <!-- adicionar o href para lincar com index.html e adicionar o logo para acessar a foto e fazer o style ---- esse no-gutters tira todos os gaps entre os itens do menu-->
+               
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+
                                 <!-- i elemente para colocar icone e aria-hidden para ser ignorado pela leitura da tela-->
+                                
                                 <a href="#" class="hvr-sweep-to-bottom"><i class="fa  fa-home" aria-hidden= "true"></i> <span>Home</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
@@ -45,14 +51,109 @@
             </div>
         </div>
     </header>
-    <section class="container-fluid">
-        <div class="row row-table">
+<section class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-color-personal-info section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Personal Info
+                        </h3>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Name:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Monica Aguilar Puzzi Alves
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Address:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            1 Oaklawn, Dunlocha Cottages, Blackrock, Cork IE
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Phone:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            +353 83 890 1858
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Email:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            monikapuzzi@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-8 bg-color-three-reasons section-column">
                <div class="row">
                   <div class="col">
                       <h3 class="section-heading uppercase"> About Me </h3>
                   </div>
                </div>
+
+               <!-- col-10 vai para mobile ele terá 10 colunas de largura com um deslocamento de 1 para o conteúdo centralizado e margem de uma coluna no lado esquerdo. outro offset-sm-0 eh para tablet, e cada sm eh uma coluna, nesse tera tres -->
+
+                 <div class="row">
+                     <div class="col-10 offset-sm-0 col-sm-4 col-md-6">
+                         <div class="row">
+                              <div class="col-2">
+                                 <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-10">
+                                  <h4 class="three-reasons-heading uppercase"> What do I do? </h4>
+                                  <p> I am a skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every project. </p>
+                              </div>
+                         </div>
+                    </div>
+                     <div class="col-10 offset-sm-0 col-sm-4 col-md-6">
+                         <div class="row">
+                              <div class="col-2">
+                                 <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-10">
+                                  <h4 class="three-reasons-heading uppercase">How do I do it? </h4>
+                                  <p> Working online and travelling around the World. </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-10 offset-sm-0 col-sm-4 col-md-6">
+                         <div class="row">
+                              <div class="col-2">
+                                 <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-10">
+                                  <h4 class="three-reasons-heading uppercase">Why hire me? </h4>
+                                  <p> I  am top of the galaxy and I need money to live. </p>
+                              </div>
+                         </div>
+                    </div>
+                 </div>
             </div>
         </div>
 
@@ -62,7 +163,6 @@
             <div class="col-sm-4">
                  <h5 class="uppercase general-sub"> About</h5>
                  <p class="inline-block"> Full Stack Web Developer. Skilled in everything from HTML to GitPod. The Capacity for structural and design thinking.
-
                  </p>
                 </div>
             <div class="col-sm-4">
