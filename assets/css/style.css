@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/* -----------------------------------------------------------------------Colours  */
+/* -----------------------------------------Colours  */
 
-/* o ponto antes eh para indicar a classe do html */
+/* ----------------o ponto antes eh para indicar a classe do html */
 
 .bg-color-name-title {
     background-color: rgb(110, 104, 99);
 }
 
 .ui-menu-color-home {
-    background-color: rgb(70, 156, 44);
+    background-color: rgb(195, 206, 39);
 }
 
 .ui-menu-color-resume {
-    background-color: rgb(206, 219, 24);
+    background-color:  rgb(70, 156, 44);   rgb(195, 206, 39)
 }
 
 .ui-menu-color-contact {
@@ -32,10 +32,13 @@
     background-color: #e0dada;
 }
 
+.bg-color-work-history {
+    background-color: rgb(70, 156, 44);
+}
 
 
 
-/* -----------------------------------------------------------Special paddings/margins/text  */
+/* -----------------Special paddings/margins/text  */
 
 h1,
 h2,
@@ -68,6 +71,7 @@ h4 {
     float: none;
     }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -76,7 +80,7 @@ h4 {
 }
 
 
-/* ------------------------------------------------------------------------------Heading  */
+/* -----------------------------------------Heading  */
 
 
 header {
@@ -106,7 +110,7 @@ header {
     color: #fafafa;
 }
 
-/* ------------------------------------------------coloca-se essa segunda fonte para se no caso a primeira nao carregar  */
+/* ---------------coloca-se essa segunda fonte para se no caso a primeira nao carregar  */
 
 .title {
     font-family: "Roboto", sans-serif;
@@ -116,20 +120,20 @@ header {
     margin-bottom: 90px;
     color: #fafafa;
 }
-/*  */
+
 /*--------------------------------------- essa classe peguei no inspecionar do site e copiei para alterar a margem para zero no menu */
 
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
 
-/* ---------------------------------------essa font size eh pra nao ter gap entre os itens do menu  */
+/* --------------------essa font size eh pra nao ter gap entre os itens do menu  */
 
 .menucontainer {
     font-size: 0;
 }
 
-/* ---------------------------------o nav margin 0 eh para o tamanho da foto e do menu ficarem da mesma altura. esse nav eh tbm para o controle dos items do menu, padding para ter controle total */
+/* -------------------o nav margin 0 eh para o tamanho da foto e do menu ficarem da mesma altura. esse nav eh tbm para o controle dos items do menu, padding para ter controle total */
 
 #nav {
     margin: 0;
@@ -171,14 +175,14 @@ header {
     letter-spacing: 2px;
 }
 
-/* -----------------------------------------------------------------------Hoover.css */
+/* ---------------------------------------Hoover.css */
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/* -------------------------------------------------------------------------Footer  */
+/* ----------------------------------------Footer  */
 
 footer {
     background-color: rgb(88, 81, 76);
@@ -232,7 +236,7 @@ footer {
 }
 
 
-/* -------------------------------------------------------Thre Reasons */
+/* ---------------------------------------Thre Reasons */
 
 .three-reasons-icon {
     font-size: 26px;
@@ -297,4 +301,55 @@ footer {
 
 .progress-section {
     margin: 40px 20px;
+}
+
+/* --------------------------------------Work History*/
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* o before traz as datas ao site*/
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+/* esse after traz o cirulo */
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display:block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: "";
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
